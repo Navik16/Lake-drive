@@ -62,7 +62,61 @@ nav ul li a {
 html {
     scroll-behavior: smooth;
 }
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Styles for Small Screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;  /* Hide menu initially */
+        flex-direction: column;
+        background: #2c3e50;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block; /* Show the menu button */
+    }
+}
 /* Logo Section */
 .logo-section {
     display: flex;
