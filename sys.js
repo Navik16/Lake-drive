@@ -132,3 +132,13 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", updateHeroBackground);
     updateHeroBackground(); // Run on page load
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+});
+
