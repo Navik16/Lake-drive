@@ -91,33 +91,7 @@ html {
     cursor: pointer;
 }
 
-/* Responsive Styles for Small Screens */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;  /* Hide menu initially */
-        flex-direction: column;
-        background: #2c3e50;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 10px;
-    }
 
-    .nav-links.active {
-        display: flex; /* Show menu when active */
-    }
-
-    .nav-links li {
-        text-align: center;
-        padding: 10px;
-        width: 100%;
-    }
-
-    .menu-toggle {
-        display: block; /* Show the menu button */
-    }
-}
 
 /* Logo Section */
 .logo-section {
