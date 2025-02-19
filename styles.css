@@ -645,7 +645,7 @@ footer {
     
     /* Hide navigation buttons on small screens */
  
-    .nav-buttons { 
+    .nav-links { 
         display: none; /* Hides the navigation buttons */
     }
 
